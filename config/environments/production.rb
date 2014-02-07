@@ -4,6 +4,10 @@ SampleApp::Application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  # force all acccess to the app over SSL, use strict-transport-security,
+  # and use secure cookies.
+  config .force_ssl = true
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
